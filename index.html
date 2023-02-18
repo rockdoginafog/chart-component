@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+<body>
+
+  <main class="hero">
+
+    <div class="my-balance-container">
+
+      <div class="my-balance-text">
+
+        <p class="my-balance">My balance</p>
+        <p class="my-balance-number">$921.48</p>
+
+      </div> 
+
+      <img src="images\logo.svg" class="logo" alt="logo">
+
+    </div>
+
+    <div class="spending-container">
+
+      <h1 class="heading">Spending - Last 7 days</h1>
+
+      <div class="days-in-the-week">
+
+        <div class="center mon-container">
+
+          <div class="price-box mon-price hidden"></div>
+          <div class="box-color mon-box"></div>
+          <p class="day">mon</p>
+
+        </div>
+
+        <div class="center tue-container">
+
+          <div class="price-box tue-price hidden"></div>
+          <div class="box-color tue-box"></div>
+          <p class="day">tue</p>
+
+        </div>
+
+        <div class="center wed-container">
+
+          <div class="price-box wed-price hidden"></div>
+          <div class="box-color wed-box"></div>
+          <p class="day">wed</p>
+
+        </div>
+
+        <div class="center thu-container">
+
+          <div class="price-box thu-price hidden"></div>
+          <div class="box-color thu-box"></div>
+          <p class="day">thu</p>
+
+        </div>
+
+        <div class="center fri-container">
+
+          <div class="price-box fri-price hidden"></div>
+          <div class="box-color fri-box"></div>
+          <p class="day">fri</p>
+
+        </div>
+
+        <div class="center sat-container">
+
+          <div class="price-box sat-price hidden"></div>
+          <div class="box-color sat-box"></div>
+          <p class="day">sat</p>
+
+        </div>
+
+        <div class="center sun-container">
+
+          <div class="price-box sun-price hidden"></div>
+          <div class="box-color sun-box"></div>
+          <p class="day">sun</p>
+
+        </div>
+
+      </div>
+
+      <hr>
+
+        <div class="total-this-month-from-last-month-container">
+
+          <div class="total-this-month-container">
+
+            <p class="total-this-month day">Total this month</p>
+            <p class="total-this-month-number">$478.33</p>
+
+          </div>
+
+          <div class="from-last-month-container">
+
+            <p class="from-last-month-number">+2.4%</p>
+            <p class="from-last-month day">from last month</p>
+
+          </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script type="text/javascript" src="data.json"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
+
+ <!--
+  Challenge by Frontend Mentor.
+  Coded by Krystian Czeszewski.
+  -->

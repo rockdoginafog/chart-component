@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,400;1,700&display=swap');
+
+:root{
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cream);
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.my-balance-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--soft-red);
+    padding: 1em;
+    color: var(--cream);
+    border-radius: 1em;
+}
+
+.my-balance-number{
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.total-this-month-number{
+    font-size: 2.1em;
+    font-weight: 700;
+}
+
+.from-last-month-number{
+    font-weight: 700;
+}
+
+.spending-container{
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.days-in-the-week{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1em;
+    gap: 2.5em;
+}
+
+.from-last-month-container{
+    text-align: right;
+}
+
+.total-this-month-from-last-month-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1em;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    position: relative;
+}
+
+.logo{
+    width: 50px;
+}
+
+.heading{
+    margin-bottom: 1em;
+}
+
+.box-color{
+    background-color: var(--soft-red);
+    width: 2em;
+    border-radius: 0.3em;
+}
+
+.box-color:hover{
+    background-color: var(--cyan);
+}
+
+.price-box{
+    background-color: var(--dark-brown);
+    color: white;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    position: absolute;
+    top: -35px;
+}
+
+hr{
+    border: 0.01em solid var(--medium-brown);
+}
+
+.day{
+    color: var(--medium-brown);
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width:550px){
+
+.days-in-the-week{
+    gap: 0.5em;
+}
+
+.price-box{
+    top: -40px
+}
+
+.box-color{
+    width: 1.5em;
+}
+
+
+}
+
